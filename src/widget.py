@@ -17,14 +17,6 @@ def mask_account_card(type_and_number: str) -> str:
     return f"{type_card_name} {get_mask_card_number(divide_string[-1])}"
 
 
-user_input = input()
-print(mask_account_card(user_input))
-
-
 def get_date(format_data: str) -> str:
     """Функция преобразует формат даты"""
     return f"{format_data[8:10]}.{format_data[5:7]}.{format_data[:4]}"
-
-
-user_input_data = input()
-print(get_date(user_input_data))
